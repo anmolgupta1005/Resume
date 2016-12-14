@@ -1,0 +1,299 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.1 (30/4/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX or LuaLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[]{deedy_format_Anmol}
+
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\namesection{Anmol}{Gupta}
+{\href{mailto:agupta10@bu.edu}{agupta10@bu.edu} | 617 712 8575
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.325\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education} 
+\vspace{0.5mm} % Hacky fix for awkward extra vertical space 
+\runsubsection{Boston University}\\
+\location{Boston, MA}
+\descript{MS with Thesis \\ Computer Engineering}
+Graduation May 2017 \\ GPA: 3.73
+\sectionsep
+
+\runsubsection{Mumbai University}\\		
+\location{Mumbai, India}
+\descript{BE in Electronics Engineering}
+Graduated - May 2015 \\ GPA: 3.72
+\sectionsep
+
+\sectionsep
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Coursework}
+\vspace{0.5mm} % Hacky fix for awkward extra vertical space 
+\flushleft
+\textbullet \, Computer Architecture\\
+\textbullet \, Digital VLSI Circuit Design\\
+\textbullet \, Digital Design - Verilog and FPGA\\
+\textbullet \, Programming Multi-core and GPUs\\
+\textbullet \, Introduction to Embedded Systems\\
+\textbullet \, Advanced Operating Systems\\
+\textbullet \, Cybersecurity\\
+\textbullet \, Learning from Data
+\sectionsep
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Programming Languages
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Languages}
+\begin{tabular}{lll}
+\custombold{Proficient} & \custombold{Intermediate} & \custombold{Familiar} \\
+C/Cpp& Matlab & MySQL\\
+Assembly & Cuda & Perl\\
+Verilog & OpenMP & HTML\\
+Python & OpenCL \\
+Bash &JAVA  \\
+Verilog &\LaTeX \\ 
+\end{tabular}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     TOOLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Tools} 
+\vspace{0.5mm} % Hacky fix for awkward extra vertical space 
+\begin{tabular}{ll}
+Cadence Virtuoso &Xilinx ISE/Vivado\\
+ModelSim &Quartus\\
+Git &Overleaf
+\end{tabular}
+\sectionsep
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     TA
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Teaching Assisstant}
+\vspace{0.5mm} % Hacky fix for awkward extra vertical space 
+\textbullet \, Digital VLSI Circuit Design\\
+\textbullet \, Introduction to Electronics\\
+\textbullet \, Computer Architecture
+\sectionsep
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Links}
+\vspace{0.5mm} % Hacky fix for awkward extra vertical space 
+LinkedIn://  \href{https://www.linkedin.com/in/anmol-gupta-90b67a108}{\custombold{Anmol Gupta}} \\
+GitHub://   \href{https://github.com/anmolgupta1005/}{\custombold{anmolgupta1005}}
+\sectionsep
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.66\textwidth} 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Experience}
+\vspace{0.5mm} % Hacky fix for awkward extra vertical space 
+\runsubsection{\href{https://www.bu.edu/icsg/}{Integrated Circuits \& Systems Group}}
+\descript{| Research Assistant }
+\location{Boston University, Boston, MA | May-16 to Present}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\vspace{1mm}
+\justify
+\begin{tightemize}
+\item Working with \textbf{\href{https://www.bu.edu/eng/profile/ajay-joshi/}{Prof. Ajay Joshi}} and \textbf{\href{https://www.bu.edu/eng/profile/manuel-egele/}{Prof Manuel Egele}} on design and development of hardware-based Security
+\end{tightemize}
+\vspace{\topsep}
+\sectionsep
+
+\runsubsection{\href{https://www.siemens.com/in/en/home.html}{Siemens, Ltd.}}
+\descript{| PLC Design Intern }
+\location{Mumbai, India | June-13 to July-13}
+\vspace{1mm}
+\justify
+\begin{tightemize}
+\item Design and Programming of injection modules on S7200 and S7300 PLCs at the Contactors and Relays Manufacturing Unit
+%\item Control Panel design of the Injection and Water Pumping Module
+\end{tightemize}
+\vspace{\topsep}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     RESEARCH
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Research Project}
+\vspace{0.5mm} % Hacky fix for awkward extra vertical space 
+\runsubsection{Malware Detection using HPC\smallercaps{s}}
+\location{| May-16 – Present}
+\vspace{1mm}
+\justify
+\begin{tightemize}
+\item Examine the use of Hardware Performance Counters (HPCs) with supervised machine learning techniques for malware detection 
+\item Goal is to prove that it is not possible to classify high-level behavior of a program (whether it is malware or not) using the profiles from HPCs
+\end{tightemize}
+\sectionsep
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     PROJECTS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Projects}
+\vspace{0.5mm} % Hacky fix for awkward extra vertical space 
+
+\runsubsection{Security Assessment of Bitcoin}
+\location{| December 2016}
+\vspace{1mm}
+\justify
+\begin{tightemize}
+\item As a security assessment for the cybersecurity course, highlighted the various attack surfaces that are exploited by Wallet Vulnerabilities, Time Jacking and Transaction Malleability
+\item Demonstrated the exploit used in the famous \href{http://www.darkreading.com/attacks-and-breaches/mt-gox-bitcoin-meltdown-what-went-wrong/d/d-id/1114091}{Mt. Gox} attack 
+\end{tightemize}
+\vspace{\topsep}
+\sectionsep
+
+\runsubsection{MBTA Live Tracker}
+\location{| April 2016}
+\vspace{1mm}
+\justify
+\begin{tightemize}
+\item Designed an embedded system with touch screen based GUI for live tracking of Boston’s public transport system - the MBTA, using GUMSTIX and RASPBERRY PI controllers. \href{https://www.youtube.com/watch?v=DtY4qqCeVRI}{Video Demo Link}
+\end{tightemize}
+\vspace{\topsep}
+\sectionsep
+
+\runsubsection{Mini OS on bare-metal }
+\location{| April 2016}
+\vspace{1mm}
+\justify
+\begin{tightemize}
+\item Implemented a basic operating system (OS) on bare-metal
+\item The OS booted from a GNU-GRUB2 Multiboot Loader, loaded a file-system on the RAM and used a FIFO scheduler to schedule processes
+\end{tightemize}
+\vspace{\topsep}
+\sectionsep
+
+\runsubsection{Rush Hour }
+\location{| December 2015}
+\vspace{1mm}
+\justify
+\begin{tightemize}
+\item Interfaced a keyboard and a HDMI display monitor to Nexys-3 (based on Xilinx Spartan-6 LX16 FPGA) board to make a video game.  \href{https://youtu.be/s36H25OkzVQ}{Game play in the Link}
+\end{tightemize}
+\vspace{\topsep}
+\sectionsep
+
+\runsubsection{4-AXIS SCARA BOT  }
+\location{| May 2015}
+\descript{Senior Design Project}
+\vspace{1mm}
+\justify
+\begin{tightemize}
+\item A SCARA bot is rigid in all but Z direction. 
+\item It had a complex mechanical design with load capabilities up to 10 kg (22 lbs) and the motors were programmed to rotate at 0.1 radians precision
+\end{tightemize} 
+\vspace{\topsep}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     AWARDS AND EXTRA-CURRICULARS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Awards and Extra-Curricular}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\vspace{1mm}
+\justify
+\begin{tabular}{ll}
+2014 & 1\textsuperscript{st} Position in Prakalpa-14 (national level project exhibition) \\
+& for the project `Securing Home Automation using Dropbox'\\
+2012-2015 & Technical Head and Member of IEEE-KJSCE Student Chapter \\
+\end{tabular}
+
+\end{minipage} 
+\end{document}  \documentclass[]{article}
