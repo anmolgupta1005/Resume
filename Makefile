@@ -2,6 +2,7 @@ DOC = deedy_resume_Anmol.tex
 PDFLATEX = pdflatex
 BIBTEX = bibtex
 LUALATEX = lualatex
+XELATEX = xelatex
 RERUN = "(There were undefined references|Rerun to get (cross-references|the bars) right)"
 RERUNBIB = "No file.*\.bbl|Citation.*undefined"
 TARDIR = $(DOC:.tex=-src)
@@ -11,7 +12,7 @@ pdf: $(DOC:.tex=.pdf)
 all: pdf
 
 %.pdf: %.tex
-	${LUALATEX} $<
+	${XELATEX} $<
 	egrep -c $(RERUNBIB) $*.log && ($(BIBTEX) $*;$(PDFLATEX) $<) ; true
 	egrep $(RERUN) $*.log && ($(LUALATEX) $<) ; true
 	egrep $(RERUN) $*.log && ($(LUALATEX) $<) ; true
